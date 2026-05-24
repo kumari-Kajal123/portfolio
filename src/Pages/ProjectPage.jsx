@@ -1,5 +1,4 @@
 import React from 'react'
-import image from "../assets/patanahi .jpeg"
 import foodRecipe from "../assets/foodRecipe.png"
 import ajinexa from "../assets/ajinexa.png"
 
