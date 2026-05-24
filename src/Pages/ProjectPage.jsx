@@ -1,7 +1,7 @@
 import React from 'react'
 import image from "../assets/patanahi .jpeg"
-import foodRecipe from "../assets/foodRecipe.mp4"
-import ajinexa from "../assets/ajinexa.mp4"
+import foodRecipe from "../assets/foodRecipe.png"
+import ajinexa from "../assets/ajinexa.png"
 
 export default function ProjectPage() {
 
@@ -11,7 +11,7 @@ export default function ProjectPage() {
     title: "Food Recipe App",
     description:
       "Recipe application with search and beautiful UI.",
-    video: foodRecipe,
+    image: foodRecipe,
     tags: ["React", "BootStrap", "NodeJs"],
     live: foodRecipe,
     github: "https://github.com/kumari-Kajal123/food-recipe.git",
@@ -22,7 +22,7 @@ export default function ProjectPage() {
     title: "Ajinexa Reality",
     description:
       "Responsive Property website with cart functionality and selling.",
-    video:ajinexa,
+    image:ajinexa,
     tags: ["React", "Tailwind"],
     live: ajinexa,
     github: "https://github.com/kumari-Kajal123/ajinexa-reality.git",
@@ -52,9 +52,14 @@ export default function ProjectPage() {
       {/* video */}
       <div className="overflow-hidden">
 
-        {project.video ? (
+        {/* {project.video ? (
           <video src={project.video} controls preload="metadata" className=" w-full h-72 object-cover " /> 
-        )  : ( <img src={image} alt={project.title} className="w-full h-72 object-cover " /> )}
+        )  : ( <img src={image} alt={project.title} className="w-full h-72 object-cover " /> )} */}
+        <img
+          src={project.image}
+          alt={project.title}
+          className="w-full h-72 object-cover"
+        />
 
       </div>
 
